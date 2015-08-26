@@ -71,8 +71,8 @@ class ProtocolBase( collections.MutableMapping):
         for prop in props:
 
             try:
-              logging.debug("Setting value for '{0}' to {1}"
-                            .format(prop, props[prop]))
+#              logging.debug("Setting value for '{0}' to {1}"
+#                            .format(prop, props[prop]))
               setattr(this, prop, props[prop])
             except validators.ValidationError as e:
               import sys
